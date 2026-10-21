@@ -440,9 +440,8 @@ NUMBERS: dict[DeviceCategory, tuple[TuyaNumberEntityDescription, ...]] = {
         ),
         TuyaNumberEntityDescription(
             key=DPCode.TEMP_CURRENT,
-            translation_key="temperature",
+            translation_key="current_temperature",
             device_class=NumberDeviceClass.TEMPERATURE,
-            entity_category=EntityCategory.CONFIG,
         ),
         TuyaNumberEntityDescription(
             key=DPCode.TEMP_SET,
