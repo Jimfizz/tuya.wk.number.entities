@@ -438,6 +438,16 @@ NUMBERS: dict[DeviceCategory, tuple[TuyaNumberEntityDescription, ...]] = {
             translation_key="temp_correction",
             entity_category=EntityCategory.CONFIG,
         ),
+        TuyaNumberEntityDescription(
+            key=DPCode.TEMP_CURRENT,
+            translation_key="temperature",
+            device_class=NumberDeviceClass.TEMPERATURE,
+        ),
+        TuyaNumberEntityDescription(
+            key=DPCode.TEMP_SET,
+            translation_key="temperature",
+            device_class=NumberDeviceClass.TEMPERATURE,
+        ),
     ),
     DeviceCategory.XNYJCN: (
         TuyaNumberEntityDescription(
